@@ -8,7 +8,7 @@ namespace Cerespirin.ButcherRotten
 	{
 		static MyStaticConstructor()
 		{
-			Harmony harmony = new Harmony("rimworld.loonyladle.butcherrotten");
+			Harmony harmony = new Harmony("rimworld.cerespirin.butcherrotten");
 			harmony.PatchAll();
 		}
 	}

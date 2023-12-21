@@ -41,7 +41,7 @@ namespace Cerespirin.ButcherRotten
 
 			if (stage == RotStage.Rotting)
 			{
-				butcher.needs.mood.thoughts.memories.TryGainMemory(MyDefOf.LuluButcherRotten_ButcheredRotten);
+				butcher.needs.mood.thoughts.memories.TryGainMemory(MyDefOf.ButcherRotten_ButcheredRotten);
 				FilthMaker.TryMakeFilth(butcher.Position, butcher.Map, ThingDefOf.Filth_CorpseBile, __instance.InnerPawn.LabelIndefinite());
 			}
 		}

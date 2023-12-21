@@ -7,6 +7,6 @@ namespace Cerespirin.ButcherRotten
 	{
 		static MyDefOf() => DefOfHelper.EnsureInitializedInCtor(typeof(MyDefOf));
 
-		public static ThoughtDef LuluButcherRotten_ButcheredRotten;
+		public static ThoughtDef ButcherRotten_ButcheredRotten;
 	}
 }
