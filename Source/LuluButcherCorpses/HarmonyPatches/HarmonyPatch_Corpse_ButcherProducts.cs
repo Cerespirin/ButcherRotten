@@ -3,7 +3,7 @@ using RimWorld;
 using System.Collections.Generic;
 using Verse;
 
-namespace LoonyLadle.ButcherRotten
+namespace Cerespirin.ButcherRotten
 {
 	[HarmonyPatch(typeof(Corpse), nameof(Corpse.ButcherProducts))]
 	public static class HarmonyPatch_Corpse_ButcherProducts

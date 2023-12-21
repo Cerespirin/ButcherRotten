@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using Verse;
 
-namespace LoonyLadle.ButcherRotten
+namespace Cerespirin.ButcherRotten
 {
 	[StaticConstructorOnStartup]
 	public static class MyStaticConstructor

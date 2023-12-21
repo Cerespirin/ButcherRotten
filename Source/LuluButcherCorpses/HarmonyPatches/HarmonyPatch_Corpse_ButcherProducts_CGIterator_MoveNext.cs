@@ -8,7 +8,7 @@ using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using Verse;
 
-namespace LoonyLadle.ButcherRotten
+namespace Cerespirin.ButcherRotten
 {
 	[HarmonyPatch]
 	public static class HarmonyPatch_Corpse_ButcherProducts_CGIterator_MoveNext

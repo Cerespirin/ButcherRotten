@@ -1,6 +1,6 @@
 ﻿using RimWorld;
 
-namespace LoonyLadle.ButcherRotten
+namespace Cerespirin.ButcherRotten
 {
 	[DefOf]
 	public static class MyDefOf

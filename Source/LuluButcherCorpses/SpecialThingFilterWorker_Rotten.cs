@@ -1,7 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace LoonyLadle.ButcherRotten
+namespace Cerespirin.ButcherRotten
 {
 	public class SpecialThingFilterWorker_Rotten : SpecialThingFilterWorker
 	{
