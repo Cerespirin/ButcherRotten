@@ -8,8 +8,6 @@ using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using Verse;
 
-#pragma warning disable IDE1006 // Naming Styles
-
 namespace LoonyLadle.ButcherRotten
 {
 	[HarmonyPatch]

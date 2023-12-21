@@ -1,8 +1,6 @@
 ﻿using HarmonyLib;
 using Verse;
 
-#pragma warning disable IDE1006 // Naming Styles
-
 namespace LoonyLadle.ButcherRotten
 {
 	[StaticConstructorOnStartup]

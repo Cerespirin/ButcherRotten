@@ -1,7 +1,5 @@
 ﻿using RimWorld;
 
-#pragma warning disable IDE1006 // Naming Styles
-
 namespace LoonyLadle.ButcherRotten
 {
 	[DefOf]
