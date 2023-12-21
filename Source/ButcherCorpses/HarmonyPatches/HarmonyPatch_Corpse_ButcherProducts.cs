@@ -3,9 +3,7 @@ using RimWorld;
 using System.Collections.Generic;
 using Verse;
 
-#pragma warning disable IDE1006 // Naming Styles
-
-namespace LoonyLadle.ButcherRotten
+namespace Cerespirin.ButcherRotten
 {
 	[HarmonyPatch(typeof(Corpse), nameof(Corpse.ButcherProducts))]
 	public static class HarmonyPatch_Corpse_ButcherProducts
@@ -43,7 +41,7 @@ namespace LoonyLadle.ButcherRotten
 
 			if (stage == RotStage.Rotting)
 			{
-				butcher.needs.mood.thoughts.memories.TryGainMemory(MyDefOf.LuluButcherRotten_ButcheredRotten);
+				butcher.needs.mood.thoughts.memories.TryGainMemory(MyDefOf.ButcherRotten_ButcheredRotten);
 				FilthMaker.TryMakeFilth(butcher.Position, butcher.Map, ThingDefOf.Filth_CorpseBile, __instance.InnerPawn.LabelIndefinite());
 			}
 		}

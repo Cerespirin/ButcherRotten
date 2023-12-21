@@ -19,14 +19,14 @@
 		<xpath>Defs/RecipeDef[defName="ButcherCorpseFlesh"]/defaultIngredientFilter/specialFiltersToDisallow</xpath>
 		<value>
 			<li>AllowRotten</li>
-			<li>LuluButcherRotten_AllowDessicated</li>
+			<li>ButcherRotten_AllowDessicated</li>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/SpecialThingFilterDef[defName="AllowRotten"]/workerClass</xpath>
 		<value>
-			<workerClass>LoonyLadle.ButcherRotten.SpecialThingFilterWorker_Rotten</workerClass>
+			<workerClass>Cerespirin.ButcherRotten.SpecialThingFilterWorker_Rotten</workerClass>
 		</value>
 	</Operation>
 
