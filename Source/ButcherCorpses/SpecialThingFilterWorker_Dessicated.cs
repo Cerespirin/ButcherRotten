@@ -1,9 +1,7 @@
 ﻿using RimWorld;
 using Verse;
 
-#pragma warning disable IDE1006 // Naming Styles
-
-namespace LoonyLadle.ButcherRotten
+namespace Cerespirin.ButcherRotten
 {
 	public class SpecialThingFilterWorker_Dessicated : SpecialThingFilterWorker
 	{

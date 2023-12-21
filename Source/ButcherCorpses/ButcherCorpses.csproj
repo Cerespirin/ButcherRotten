@@ -7,8 +7,8 @@
     <ProjectGuid>{72D4829C-0CE7-4044-ADDD-CB6276B09142}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LoonyLadle.ButcherRotten</RootNamespace>
-    <AssemblyName>LuluButcherRotten</AssemblyName>
+    <RootNamespace>Cerespirin.ButcherRotten</RootNamespace>
+    <AssemblyName>ButcherRotten</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
