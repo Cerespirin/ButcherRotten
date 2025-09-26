@@ -41,6 +41,10 @@ namespace Cerespirin.ButcherRotten
 					state = 2;
 				}
 			}
+			if (state < 2)
+			{
+				Log.Error("[ButcherCorpses] HarmonyPatch_Corpse_ButcherProducts_CGIterator_MoveNext: unable to find injection point. This was likely due to a mod incompatibility; please report this to the mod author.");
+			}
 			yield break;
 		}
 	}
