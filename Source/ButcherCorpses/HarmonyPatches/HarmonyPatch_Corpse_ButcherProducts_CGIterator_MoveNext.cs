@@ -2,7 +2,6 @@
 using RimWorld;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
@@ -21,12 +20,10 @@ namespace Cerespirin.ButcherRotten
 		public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
 		{
 			MethodInfo targetMethod = typeof(RaceProperties).GetProperty(nameof(RaceProperties.BloodDef)).GetGetMethod();
-			List<CodeInstruction> instructionsAsList = instructions.ToList();
 			byte state = 0;
 
-			for (int i = 0; i < instructionsAsList.Count; i++)
+			foreach (CodeInstruction instruction in instructions)
 			{
-				CodeInstruction instruction = instructionsAsList[i];
 				yield return instruction;
 				if (state == 2)
 				{
@@ -43,6 +40,10 @@ namespace Cerespirin.ButcherRotten
 					yield return new CodeInstruction(OpCodes.Brtrue, instruction.operand);
 					state = 2;
 				}
+			}
+			if (state < 2)
+			{
+				Log.Error("[ButcherCorpses] HarmonyPatch_Corpse_ButcherProducts_CGIterator_MoveNext: unable to find injection point. This was likely due to a mod incompatibility; please report this to the mod author.");
 			}
 			yield break;
 		}

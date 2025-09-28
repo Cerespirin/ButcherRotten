@@ -7,8 +7,7 @@ namespace Cerespirin.ButcherRotten
 	{
 		public override bool Matches(Thing t)
 		{
-			CompRottable compRottable = t.TryGetComp<CompRottable>();
-			return compRottable != null && !compRottable.PropsRot.rotDestroys && compRottable.Stage == RotStage.Rotting;
+			return t.TryGetComp(out CompRottable compRottable) && !compRottable.PropsRot.rotDestroys && compRottable.Stage == RotStage.Rotting;
 		}
 
 		public override bool CanEverMatch(ThingDef def)

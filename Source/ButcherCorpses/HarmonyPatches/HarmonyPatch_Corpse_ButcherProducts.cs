@@ -16,14 +16,12 @@ namespace Cerespirin.ButcherRotten
 			{
 				if (stage != RotStage.Fresh)
 				{
-					CompRottable comp = entry.TryGetComp<CompRottable>();
-
 					if (entry.GetStatValue(StatDefOf.DeteriorationRate) > 0.5)
 					{
 						entry.Destroy();
 						continue;
 					}
-					else if (comp != null)
+					else if (entry.TryGetComp(out CompRottable comp))
 					{
 						if ((stage == RotStage.Dessicated) || comp.PropsRot.rotDestroys)
 						{
